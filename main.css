@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 main {
@@ -49,7 +49,7 @@ main {
 
 .card p {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   line-height: 1.6rem;
 }
 
@@ -104,4 +104,21 @@ main {
   background-color: var(--cyan-dark);
   border: 2px solid white;
   color: white;
+}
+
+@media (min-width: 576px) {
+  body {
+    padding: 0;
+    height: 100vh;
+  }
+  
+  main {
+    max-width: 920px;
+    max-height: 500px;
+    display: flex;
+  }
+
+  .card {
+    padding: 48px;
+  }
 }
